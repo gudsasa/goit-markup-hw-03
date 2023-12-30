@@ -102,6 +102,7 @@ img {
 .header-item {
     display: flex;
     gap: 40px;
+    padding-right: 332px;
 }
 
 .header-list {}
@@ -123,7 +124,6 @@ img {
 .header-adres-item {
     display: flex;
     gap: 40px;
-    padding-left: 332px;
 }
 
 .addres-item {}
