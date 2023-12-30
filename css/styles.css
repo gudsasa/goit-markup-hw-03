@@ -3,14 +3,13 @@ body {
     font-family: 'Roboto', sans-serif;
 }
 
-p,
 h1,
 h2,
 h3,
 h4,
 h5,
 h6,
-{
+p {
 margin: 0;
 }
 
@@ -231,7 +230,6 @@ img {
 
 .section-three {
     padding: 120px 0;
-    background: #F4F4FD;
 }
 
 .section-three-tex {
@@ -251,6 +249,7 @@ img {
 }
 
 .three-list {
+    background: #F4F4FD;
     width: calc((100% - 72px) / 4);
     border-radius: 0px 0px 4px 4px;
 }
