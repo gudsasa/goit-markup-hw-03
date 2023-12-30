@@ -39,17 +39,40 @@ address {
     font-size: normal;
 }
 
+img {
+    display: block;
+}
+
 .container {
     width: 100%;
     max-width: 1158px;
+    padding: 0 15px;
     margin: 0 auto;
+
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
 }
 
 /** ------------- header ------------- **/
 
 .header {}
 
-.header-nav {}
+.header-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
 
 .header-web {
     color: var(--IRIS, #4D5AE5);
@@ -59,13 +82,17 @@ address {
     line-height: 1.17;
     letter-spacing: 0.03em;
     text-transform: uppercase;
+    display: flex;
 }
 
 .header-web span {
     color: var(--NAVY-BLUE, #2E2F42);
 }
 
-.header-item {}
+.header-item {
+    display: flex;
+    gap: 40px;
+}
 
 .header-list {}
 
@@ -75,10 +102,17 @@ address {
     font-weight: 500;
     line-height: 1.5;
     letter-spacing: 0.02em;
+
 }
 
 .adres-one {
     font-style: normal;
+    gap: 332px;
+}
+
+.header-adres-item {
+    display: flex;
+    gap: 40px;
 }
 
 .header-adres {
@@ -99,6 +133,14 @@ address {
 
 .section-one {
     background: var(--NAVY-BLUE, #2E2F42);
+    width: 1440px;
+    height: 600px;
+    flex-shrink: 0;
+    margin: 0 auto;
+}
+
+.container-hero {
+    background: #2E2F42;
 }
 
 .one-tex {
@@ -108,15 +150,28 @@ address {
     font-weight: 700;
     line-height: 1.07;
     letter-spacing: 0.02em;
+    margin-bottom: 48px;
+    max-width: 496px;
+    margin: 0 auto;
+    padding-top: 188px;
+    padding-bottom: 48px;
 }
 
 .one-but {
+    padding: 32px 16px;
     color: var(--WHITE, #FFF);
     font-family: Roboto;
     font-size: 16px;
     font-weight: 500;
     line-height: 1.5;
     letter-spacing: 0.04em;
+    border-radius: 4px;
+    background: var(--IRIS, #4D5AE5);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+    border: none;
+    cursor: pointer;
+    margin: 0 auto;
+    display: block;
 }
 
 /** --------------------------------------- **/
@@ -127,9 +182,16 @@ address {
 
 .section-two-tex {}
 
-.two-item {}
+.two-item {
+    display: flex;
+    gap: 24px;
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
 
-.two-list {}
+.two-list {
+    width: calc((100% - 24 * 3) / 4);
+}
 
 .two-link {
     color: var(--NAVY-BLUE, #2E2F42);
@@ -162,11 +224,19 @@ address {
     line-height: 1.11;
     letter-spacing: 0.02em;
     text-transform: capitalize;
+    padding-top: 120px;
 }
 
-.three-item {}
+.three-item {
+    display: flex;
+    gap: 24px;
+    padding-top: 72px;
+    padding-bottom: 120px;
+}
 
-.three-list {}
+.three-list {
+    padding-top: 72px;
+}
 
 .three-img {}
 
@@ -202,11 +272,20 @@ address {
     line-height: 1.11;
     letter-spacing: 0.02em;
     text-transform: capitalize;
+    padding-top: 120px;
+    padding-bottom: 72px;
 }
 
-.four-item {}
+.four-item {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 24px;
+    row-gap: 48px;
+}
 
 .four-list {}
+
+.four-img {}
 
 .four-link {
     color: var(--NAVY-BLUE, #2E2F42);
@@ -214,6 +293,7 @@ address {
     font-weight: 500;
     line-height: 1.2;
     letter-spacing: 0.02em;
+    padding-top: 32px;
 }
 
 .four-tex {
@@ -222,6 +302,7 @@ address {
     font-weight: 400;
     line-height: 1.5;
     letter-spacing: 0.02em;
+    padding-bottom: 32px;
 }
 
 /** ---------------------------------- **/
@@ -229,10 +310,15 @@ address {
 
 .footer {
     background: var(--NAVY-BLUE, #2E2F42);
+    width: 1440px;
+    height: 312px;
+    flex-shrink: 0;
+    margin: 0 auto;
 }
 
 .footer-adres {
     font-style: normal;
+    padding-top: 101.5px;
 }
 
 .footer-web {
@@ -243,6 +329,8 @@ address {
     line-height: 1.17;
     letter-spacing: 0.03em;
     text-transform: uppercase;
+
+
 }
 
 .footer-web span {
@@ -255,6 +343,9 @@ address {
     font-weight: 400;
     line-height: 1.5;
     letter-spacing: 0.02em;
+    max-width: 264px;
+    margin-top: 17.5px;
+    margin-bottom: 100px;
 }
 
 /** ----------------------------------- **/
