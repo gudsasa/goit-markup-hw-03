@@ -69,6 +69,7 @@ img {
 
 .container-header {
     display: flex;
+    justify-content: space-between;
 }
 
 .header-nav {
@@ -97,7 +98,6 @@ img {
 .header-item {
     display: flex;
     gap: 40px;
-    padding-right: 332px;
 }
 
 .header-list {}
