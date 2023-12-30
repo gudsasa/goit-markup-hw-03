@@ -117,11 +117,8 @@ img {
 
 }
 
-.adres-one {
-    font-style: normal;
-}
-
 .header-adres-item {
+    font-style: normal;
     display: flex;
     gap: 40px;
 }
